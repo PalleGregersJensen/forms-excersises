@@ -8,8 +8,9 @@ function initApp() {
     document.querySelector("#submit_btn").addEventListener("click", myAgeDividedByTwoAndAddedSeven);    
 }
 
-function myAgeDividedByTwoAndAddedSeven() {
-console.log("myAge-function")
+function myAgeDividedByTwoAndAddedSeven(event) {
+    event.preventDefault();
+    console.log("myAge-function")
 
     let myAge = document.querySelector("#myAge").value;
     let ageYoungWoman = document.querySelector("#age_young_woman").value;
