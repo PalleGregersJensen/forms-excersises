@@ -20,16 +20,25 @@ function calculateBMI(event) {
 
     if (bmiCalculation > 30) {
       document.querySelector("#output").textContent =
-        "Dit BMI indikerer svær overvægt";
+        `Dit BMI er: ${bmiCalculation.toFixed(2)} Dit BMI indikerer svær overvægt`;
     } else if (bmiCalculation < 30 && bmiCalculation >= 25) {
-      document.querySelector("#output").textContent =
-        "Dit BMI indikerer overvægt";
+      document.querySelector(
+        "#output"
+      ).textContent = `Dit BMI er: ${bmiCalculation.toFixed(
+        2
+      )} Dit BMI indikerer overvægt`;
     } else if (bmiCalculation < 25 && bmiCalculation >= 20) {
-      document.querySelector("#output").textContent =
-        "Dit BMI indikerer normalvægt";
+      document.querySelector(
+        "#output"
+      ).textContent = `Dit BMI er: ${bmiCalculation.toFixed(
+        2
+      )} Dit BMI indikerer normalvægt`;
     } else if (bmiCalculation < 18.5) {
-      document.querySelector("#output").textContent =
-        "Dit BMI indikerer undervægt";
+      document.querySelector(
+        "#output"
+      ).textContent = `Dit BMI er: ${bmiCalculation.toFixed(
+        2
+      )} Dit BMI indikerer undervægt`;
     }
     console.log("Udskrives BMI ikke?")
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RGB sliders</title>
+	<style>
+		#colorBox {
+			height: 100px;
+			width: 100px;
+			border: 1px solid black;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<label for="redSlider">Red:</label>
+		<input type="range" id="redSlider" name="redSlider" min="0" max="255">
+		<span id="redValue">0</span>
+	</div>
+	<div>
+		<label for="greenSlider">Green:</label>
+		<input type="range" id="greenSlider" name="greenSlider" min="0" max="255">
+		<span id="greenValue">0</span>
+	</div>
+	<div>
+		<label for="blueSlider">Blue:</label>
+		<input type="range" id="blueSlider" name="blueSlider" min="0" max="255">
+		<span id="blueValue">0</span>
+	</div>
+	<div>
+		<label for="colorBox">Color:</label>
+		<div id="colorBox"></div>
+	</div>
+	<script src="slider.js"></script>
+</body>
+</html>
